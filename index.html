@@ -31,3 +31,38 @@
     </script>
   </body>
 </html>
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Minha Telinha</title>
+    <meta charset="UTF-8" />
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <style>
+      body {
+        background-color: #1f1f1f;
+        color: white;
+        font-family: sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+      }
+      button {
+        padding: 10px 20px;
+        background-color: #6c47ff;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-size: 18px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Olá, Telinha no Telegram! 💜</h1>
+    <button onclick="Telegram.WebApp.close()">Fechar</button>
+  </body>
+</html>
