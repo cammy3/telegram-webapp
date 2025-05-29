@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Meu Mini App do Telegram</title>
+    <meta charset="UTF-8" />
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <style>
+      body {
+        font-family: sans-serif;
+        background-color: #f4f4f4;
+        padding: 20px;
+      }
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Olá do Web App do Telegram!</h1>
+    <p>Esse é seu mini app dentro do Telegram 🚀</p>
+    <button onclick="enviar()">Enviar mensagem para o bot</button>
+
+    <script>
+      const tg = window.Telegram.WebApp;
+      tg.expand();
+
+      function enviar() {
+        tg.sendData("Olá do Web App!"); // o bot vai receber isso
+      }
+    </script>
+  </body>
+</html>
